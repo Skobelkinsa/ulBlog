@@ -231,7 +231,7 @@
 .hot-item {
   background-color: #EFF9FC;
   margin: 15px 0 20px;
-  max-height: 295px; }
+  min-height: 295px; }
   .hot-item_sub-title {
     padding: 27px 0 10px;
     text-transform: uppercase;

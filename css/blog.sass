@@ -1,0 +1,366 @@
+.fixed-block
+  position: fixed
+  top: 0px
+  left: 0px
+  width: 100%
+  z-index: 2
+  background-color: #F2F2F2
+.main-header
+  background-color: #F2F2F2
+  &:before
+    content: ''
+    width: 100%
+    height: 0.13rem
+    background-color: #BAE2F3
+    position: absolute
+    bottom: 0
+    left: 0
+  .menu__item_active .menu__link:before
+    background: #00B426
+.block-gray
+  background-color: #F2F2F2
+.blog
+  font-family: Lato-Regular
+  &-title
+    font-family: Lato-Heavy
+    font-size: 46px
+    color: #000000
+    letter-spacing: 0
+    text-align: center
+    text-transform: uppercase
+  &-desc
+    width: 50%
+    margin: 0 auto
+    text-align: center
+    font-size: 1rem
+  &-tags
+    list-style: none
+    padding: 0px 0 50px
+    width: 80%
+    margin: 0 auto
+    &_cnt
+      color: rgba(0, 0, 0, 0.5)
+      padding-left: 7px
+      display: inline-block
+    li
+      display: inline-block
+      width: (100%/3)
+      padding: 0.5rem 0
+      margin: -2px
+      a
+        color: #0090CB
+        text-decoration: none
+.blog-head
+  &_search
+    position: absolute
+    right: 15px
+    top: 50%
+    margin-top: -(1.71rem/2)
+    &-toggle
+      display: flex
+      align-items: center
+      button
+        outline: none
+      input
+        outline: none
+        padding: 10px 20px
+        border:
+          left: 0
+          right: 0
+          top: 0
+          bottom: 1px solid #BAE2F3
+      &.hidden
+        display: none
+    .icon-search
+      cursor: pointer
+      background: 
+        image: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTM3MC4wNjgsNjMuNDk0QzMyOS4xMjMsMjIuNTQ5LDI3NC42ODYsMCwyMTYuNzgxLDBTMTA0LjQzOCwyMi41NDksNjMuNDk0LDYzLjQ5NEMyMi41NDksMTA0LjQzOCwwLDE1OC44NzYsMCwyMTYuNzggICAgYzAsNTcuOTA1LDIyLjU0OSwxMTIuMzQzLDYzLjQ5NCwxNTMuMjg3YzQwLjk0NCw0MC45NDQsOTUuMzgzLDYzLjQ5NCwxNTMuMjg3LDYzLjQ5NHMxMTIuMzQyLTIyLjU1LDE1My4yODctNjMuNDk0ICAgIGM0MC45NDQtNDAuOTQ0LDYzLjQ5NC05NS4zODIsNjMuNDk0LTE1My4yODdDNDMzLjU2MSwxNTguODc2LDQxMS4wMTIsMTA0LjQzOCwzNzAuMDY4LDYzLjQ5NHogTTIxNi43OCwzOTIuMTk2ICAgIGMtOTYuNzI1LDAtMTc1LjQxNi03OC42OTEtMTc1LjQxNi0xNzUuNDE2UzEyMC4wNTYsNDEuMzY0LDIxNi43ODEsNDEuMzY0czE3NS40MTUsNzguNjkxLDE3NS40MTUsMTc1LjQxNiAgICBTMzEzLjUwNSwzOTIuMTk2LDIxNi43OCwzOTIuMTk2eiIgZmlsbD0iIzAwOTBjYiIvPgoJPC9nPgo8L2c+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTUwNS45NDMsNDc2LjY5M0wzNjkuOTgxLDM0MC43MzJjLTguMDc3LTguMDc3LTIxLjE3Mi04LjA3Ny0yOS4yNDksMGMtOC4wNzYsOC4wNzctOC4wNzYsMjEuMTcyLDAsMjkuMjQ5ICAgIGwxMzUuOTYxLDEzNS45NjFjNC4wMzgsNC4wMzksOS4zMzIsNi4wNTgsMTQuNjI1LDYuMDU4YzUuMjkzLDAsMTAuNTg3LTIuMDE5LDE0LjYyNS02LjA1OCAgICBDNTE0LjAxOSw0OTcuODY1LDUxNC4wMTksNDg0Ljc3LDUwNS45NDMsNDc2LjY5M3oiIGZpbGw9IiMwMDkwY2IiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K")
+        position: center
+        repeat: no-repeat
+        size: cover
+      width: 1.71rem
+      height: 1.71rem
+      background-color: transparent
+      border: 0
+  &_menu
+    display: flex
+    justify-content: center
+    min-height: 5.71rem
+    a
+      margin-right: 1.7%
+      font-weight: bold
+      text-transform: uppercase
+      font-size: 1rem
+      color: #000
+      text-decoration: none
+      display: flex
+      align-items: center
+.blog_menu-container
+  border-bottom: 1px solid #F2F2F2
+  margin-bottom: 15px
+.blog-list
+  &_item
+    min-width: 320px
+    height: 28.5rem
+    width: 25%
+    float: left
+    padding: 10px
+    overflow: hidden
+    position: relative
+    text-decoration: none
+    color: #000
+    line-height: 1.5
+    &:hover
+      .blog-list_item-title
+        color: #00B426
+    &-desc
+      position: absolute
+      height: 35%
+      margin: -7px 10px
+      left: 0
+      border:
+        left: 1px solid
+        right: 1px solid
+        bottom: 1px solid
+        top: 0
+        color: #D0E9F3
+    &-date
+      position: absolute
+      bottom: 0px
+      left: 0px
+      margin: 15px
+      font-size: 0.86rem
+      color: #9B9B9B
+    &-title
+      font-family: Lato-Semibold
+      margin: 15px 15px 0
+      display: block
+    &-tag
+      font-family: Lato-Light
+      color: #00A2D8
+      display: block
+      padding: 30px 15px 0
+    &-image
+      display: block
+      overflow: hidden
+      width: 100%
+      height: 65%
+      position: relative
+      z-index: 1
+      img
+        height: 100%
+        width: auto
+    &-big
+      @extend .blog-list_item
+      width: 75%
+      &-title
+        position: absolute
+        bottom: 10%
+        color: #fff
+        font-size: 3rem
+        width: 90%
+        left: 5%
+        z-index: 1
+      &-image
+        @extend .blog-list_item-image
+        height: 100%
+        img
+          height: auto
+          width: 100%
+    &-noimage
+      @extend .blog-list_item
+      &-title
+        @extend .blog-list_item-title
+        margin-bottom: 15px
+      &-desc
+        @extend .blog-list_item-desc
+        height: 95.7%
+        margin: 0 10px
+        border: 1px solid #D0E9F3
+      &-tag
+        @extend .blog-list_item-tag
+      &-date
+        @extend .blog-list_item-date
+        position: relative
+        margin: 15px
+      &-text
+        margin: 15px
+        display: block
+
+.container-full
+  padding: 0
+  margin: 0 auto
+  max-width: 1280px
+  position: relative
+
+.blog-subscribe
+  background-color: #EFF9FC
+  height: 100px
+  margin: 15px auto
+  &_container
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-items: center
+    align-content: center
+    height: 100%
+    &-social
+      height: 100%
+      width: 30%
+      padding-left: 45px
+      margin-left: 45px
+      border-left: 1px solid #D0E9F3
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      justify-content: center
+      align-items: center
+      align-content: center
+      p
+        margin-right: 20px
+      .social-icon__item
+        margin-right: 15px
+    &-desc
+      width: 30%
+      padding: 0 5%
+    input
+      height: 40px
+      border: 1px solid #07A5D9
+      background-color: transparent
+      margin-right: 10px
+    button
+      background: #00B426
+      border-radius: 3px
+      width: 177px
+      height: 42px
+      border: 0
+      color: #fff
+.hot-item
+  background-color: #EFF9FC
+  margin: 15px 0 20px
+  max-height: 295px
+  &_sub-title
+    padding: 27px 0 10px
+    text-transform: uppercase
+    color: #00A2D8
+    font-size: 1em
+  &_title
+    color: #000
+    font-size: 1.5em
+
+  &_list
+    padding: 20px 0
+    &-container
+      background-color: #fff
+      padding: 15px 20px
+      display: block
+    &-date
+      display: block
+      margin-top: 15px
+      color: #9B9B9B
+      font-size: 0.8em
+    &-title
+      font-family: Lato-Semibold
+      display: block
+      color: #000
+    &-item
+      padding: 10px
+      width: 25%
+      float: left
+      text-decoration: none
+      &:hover
+        .hot-item_list-title
+          color: #00B426
+
+// mobile
+@media (max-width: 1300px)
+  .blog-tags
+    width: 100%
+@media (max-width: 1280px)
+  .blog-list_item
+    width: (100%/3)
+    &-big
+      width: 100%
+@media (max-width: 960px)
+  .blog-subscribe_container
+    padding: 0 5%
+  .blog-subscribe_container-desc
+    display: none
+  .blog-subscribe_container-social
+    width: 40%
+
+  .blog-subscribe_container-social .social-icon__item
+    margin-right: 5px
+  .blog-list_item
+    width: (100%/2)
+    &-big
+      width: 100%
+  .blog-desc
+    width: 100%
+  .blog-tags
+    max-width: 300px
+    margin: 0 auto
+    li
+      width: 100%
+  .blog-head
+    &_search
+      display: flex
+      justify-content: center
+      position: relative
+      right: 0
+      top: 0
+      margin:
+        top: 0px
+        bottom: 15px
+      padding: 15px
+      input
+        width: 80%
+      & > .blog-head_search-toggle
+        display: flex
+        align-items: center
+      & > .icon-search
+        display: none
+    &_menu
+      display: flex
+      flex-direction: column
+      flex-wrap: nowrap
+      justify-content: flex-start
+      align-items: center
+      align-content: center
+      a
+        line-height: 2
+@media (max-width: 650px)
+  .hot-item_list-item
+    width: 50%
+  .blog-subscribe_container-social
+    width: 40%
+    padding: 0
+    flex-direction: column
+    border: 0
+  .blog-list_item
+    width: 100%
+    &-image
+      height: auto
+      img
+        height: auto
+        width: 100%
+    &-big
+      width: 100%
+      height: auto
+      &-title
+        font-size: 1.5em
+@media (max-width: 425px)
+  .hot-item_list-item
+    width: 100%
+  .blog-list_item-desc
+    height: auto
+    padding-bottom: 50px
+  .blog-subscribe_container input
+    width: 80%
+  .blog-subscribe_container-social
+    display: none
+@media (max-width: 320px)
+  .blog-list_item-desc
+    height: 50%
+    padding-bottom: 50px

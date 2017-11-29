@@ -1,3 +1,29 @@
+.head-tag, .head-detail
+  .container
+    display: flex
+    position: relative
+    left: 0
+    align-items: center
+    padding-top: 70px
+    width: 92%
+    &:before
+      content: ''
+      width: 100%
+      height: 0.13rem
+      background-color: #BAE2F3
+      position: absolute
+      left: 0
+      bottom: 0
+    .all-article
+      color: #00A2D8
+      text-decoration: none
+      font-weight: bold
+    .title
+      font:
+        size: 24px
+        family: Lato-Light
+      color: #000
+      padding-left: 10%
 .side-menu-btn
   right: 0
 .fixed-block
@@ -7,8 +33,12 @@
   width: 100%
   z-index: 2
   background-color: #F2F2F2
+  &.white
+    background-color: #fff
 .main-header
   background-color: #F2F2F2
+  &.white
+    background-color: #fff
   &:before
     content: ''
     width: 100%
@@ -207,6 +237,10 @@
     align-items: center
     align-content: center
     height: 100%
+    &-link
+      a
+        color: #00A2D8
+        text-decoration: none
     &-social
       height: 100%
       width: 30%
@@ -251,6 +285,12 @@
     color: #000
     font-size: 1.3em
     padding: 0 15px
+    span
+      font:
+        family: Lato-Light
+        size: 14px
+      color: #9B9B9B
+      padding-left: 15px
   &_list
     padding: 20px 0
     &-container
@@ -274,6 +314,80 @@
       &:hover
         .hot-item_list-title
           color: #00B426
+.c-block
+  border: 0
+  padding: 0 15px
+.detail-content
+  font-size: 16px
+  line-height: 1.5
+  .middle-title
+    font-family: Lato-Light
+    font-size: 26px
+    color: #000000
+    letter-spacing: 0
+  .image-box
+    width: 100%
+    img
+      float: left
+      width: 33%
+      &:nth-child(4)
+        width: 66%
+  .center-content
+    max-width: 850px
+    margin: 0 auto
+  hr
+    border:
+      width: 2px
+      color: #BAE2F3
+      style: dashed
+      top: 0
+      left: 0
+      right: 0
+  .table-box
+    border-collapse: collapse
+    width: 100%
+    td
+      padding: 15px 10px
+      border-bottom: 2px solid #9B9B9B
+    tr:first-child
+      td
+        font:
+          size: 16px
+          family: Lato-Semibold
+  .circle-title-svg
+    top: -50px
+  .accent
+    width: calc(100% - 1em)
+    font-size: 18px
+  .comments
+    border-bottom: 2px dashed #BAE2F3
+    padding: 50px 5%
+    display: flex
+    align-items: center
+    &.accent
+      border: 0
+  .prev
+    width: 80%
+  .desc
+    line-height: 1.5
+  .data
+    color: #9B9B9B
+    font:
+      size: 12px
+      family: Lato-Light
+  .avatar
+    max-width: 165px
+    p
+      font-size: 14px
+    img
+      margin-bottom: 17px
+    a
+      color: #00A2D8
+      text-decoration: none
+      font-weight: bold
+      font-size: 16px
+
+
 // mobile
 @media (max-width: 1300px)
   .blog-tags
@@ -332,6 +446,7 @@
       a
         line-height: 2
 @media (max-width: 650px)
+
   .hot-item_list-item
     width: 50%
   .blog-subscribe_container-social
@@ -352,6 +467,8 @@
       &-title
         font-size: 1.5em
 @media (max-width: 425px)
+  .detail-content .comments
+    display: block
   .hot-item_list-item
     width: 100%
   .blog-list_item-desc
@@ -361,7 +478,12 @@
     width: 80%
   .blog-subscribe_container-social
     display: none
-@media (max-width: 320px)
+@media (max-width: 380px)
+  .detail-content
+    .table-box
+      border-collapse: separate
+      td
+        padding: 0
   .blog-list_item-desc
     height: 50%
     padding-bottom: 50px

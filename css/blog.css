@@ -1,3 +1,28 @@
+.head-tag .container, .head-detail .container {
+  display: flex;
+  position: relative;
+  left: 0;
+  align-items: center;
+  padding-top: 70px;
+  width: 92%; }
+  .head-tag .container:before, .head-detail .container:before {
+    content: "";
+    width: 100%;
+    height: 0.13rem;
+    background-color: #BAE2F3;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+  .head-tag .container .all-article, .head-detail .container .all-article {
+    color: #00A2D8;
+    text-decoration: none;
+    font-weight: bold; }
+  .head-tag .container .title, .head-detail .container .title {
+    font-size: 24px;
+    font-family: Lato-Light;
+    color: #000;
+    padding-left: 10%; }
+
 .side-menu-btn {
   right: 0; }
 
@@ -8,9 +33,13 @@
   width: 100%;
   z-index: 2;
   background-color: #F2F2F2; }
+  .fixed-block.white {
+    background-color: #fff; }
 
 .main-header {
   background-color: #F2F2F2; }
+  .main-header.white {
+    background-color: #fff; }
   .main-header:before {
     content: "";
     width: 100%;
@@ -199,6 +228,9 @@
     align-items: center;
     align-content: center;
     height: 100%; }
+    .blog-subscribe_container-link a {
+      color: #00A2D8;
+      text-decoration: none; }
     .blog-subscribe_container-social {
       height: 100%;
       width: 30%;
@@ -244,6 +276,11 @@
     color: #000;
     font-size: 1.3em;
     padding: 0 15px; }
+    .hot-item_title span {
+      font-family: Lato-Light;
+      font-size: 14px;
+      color: #9B9B9B;
+      padding-left: 15px; }
   .hot-item_list {
     padding: 20px 0; }
     .hot-item_list-container {
@@ -266,6 +303,76 @@
       text-decoration: none; }
       .hot-item_list-item:hover .hot-item_list-title {
         color: #00B426; }
+
+.c-block {
+  border: 0;
+  padding: 0 15px; }
+
+.detail-content {
+  font-size: 16px;
+  line-height: 1.5; }
+  .detail-content .middle-title {
+    font-family: Lato-Light;
+    font-size: 26px;
+    color: #000000;
+    letter-spacing: 0; }
+  .detail-content .image-box {
+    width: 100%; }
+    .detail-content .image-box img {
+      float: left;
+      width: 33%; }
+      .detail-content .image-box img:nth-child(4) {
+        width: 66%; }
+  .detail-content .center-content {
+    max-width: 850px;
+    margin: 0 auto; }
+  .detail-content hr {
+    border-width: 2px;
+    border-color: #BAE2F3;
+    border-style: dashed;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0; }
+  .detail-content .table-box {
+    border-collapse: collapse;
+    width: 100%; }
+    .detail-content .table-box td {
+      padding: 15px 10px;
+      border-bottom: 2px solid #9B9B9B; }
+    .detail-content .table-box tr:first-child td {
+      font-size: 16px;
+      font-family: Lato-Semibold; }
+  .detail-content .circle-title-svg {
+    top: -50px; }
+  .detail-content .accent {
+    width: calc(100% - 1em);
+    font-size: 18px; }
+  .detail-content .comments {
+    border-bottom: 2px dashed #BAE2F3;
+    padding: 50px 5%;
+    display: flex;
+    align-items: center; }
+    .detail-content .comments.accent {
+      border: 0; }
+  .detail-content .prev {
+    width: 80%; }
+  .detail-content .desc {
+    line-height: 1.5; }
+  .detail-content .data {
+    color: #9B9B9B;
+    font-size: 12px;
+    font-family: Lato-Light; }
+  .detail-content .avatar {
+    max-width: 165px; }
+    .detail-content .avatar p {
+      font-size: 14px; }
+    .detail-content .avatar img {
+      margin-bottom: 17px; }
+    .detail-content .avatar a {
+      color: #00A2D8;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px; }
 
 @media (max-width: 1300px) {
   .blog-tags {
@@ -350,6 +457,9 @@
       .blog-list_item-big-title {
         font-size: 1.5em; } }
 @media (max-width: 425px) {
+  .detail-content .comments {
+    display: block; }
+
   .hot-item_list-item {
     width: 100%; }
 
@@ -362,7 +472,12 @@
 
   .blog-subscribe_container-social {
     display: none; } }
-@media (max-width: 320px) {
+@media (max-width: 380px) {
+  .detail-content .table-box {
+    border-collapse: separate; }
+    .detail-content .table-box td {
+      padding: 0; }
+
   .blog-list_item-desc, .blog-list_item-noimage-desc {
     height: 50%;
     padding-bottom: 50px; } }

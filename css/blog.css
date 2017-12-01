@@ -1,3 +1,37 @@
+.blog-star .sub-star-form .vopros {
+  margin-bottom: 20px; }
+.blog-star .sub-star-form input {
+  height: 40px;
+  margin: 0 auto 20px;
+  min-width: 320px;
+  max-width: 500px;
+  width: 90%;
+  display: block; }
+.blog-star .sub-star-form button {
+  margin: 0 auto 40px;
+  display: block; }
+.blog-star .sub-star-form.hidden {
+  display: none; }
+.blog-star .title {
+  font-size: 26px;
+  text-align: center;
+  margin: 80px 0 30px; }
+.blog-star .vopros {
+  font-family: Lato-Light;
+  text-align: center; }
+.blog-star .star-list {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 50px; }
+.blog-star .star {
+  width: 30px; }
+  .blog-star .star polygon {
+    cursor: pointer;
+    transition: fill 0.5s;
+    fill: #c7c7c7; }
+  .blog-star .star:hover polygon, .blog-star .star.active polygon {
+    fill: #000; }
+
 .head-tag .container, .head-detail .container {
   display: flex;
   position: relative;

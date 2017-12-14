@@ -1,3 +1,39 @@
+.blog-star
+  .sub-star-form
+    .vopros
+      margin-bottom: 20px
+    input
+      height: 40px
+      margin: 0 auto 20px
+      min-width: 320px
+      max-width: 500px
+      width: 90%
+      display: block
+    button
+      margin: 0 auto 40px
+      display: block
+    &.hidden
+      display: none
+  .title
+    font-size: 26px
+    text-align: center
+    margin: 80px 0 30px
+  .vopros
+    font-family: Lato-Light
+    text-align: center
+  .star-list
+    display: flex
+    justify-content: center
+    margin: 20px 0 50px
+  .star
+    width: 30px
+    polygon
+      cursor: pointer
+      transition: fill .5s
+      fill: #c7c7c7
+    &:hover, &.active
+      polygon
+        fill: #000
 .head-tag, .head-detail
   .container
     display: flex

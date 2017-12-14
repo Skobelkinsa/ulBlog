@@ -110,6 +110,23 @@ function showBlocksOnScroll() {
     })
 }
 $(document).ready(function () {
+    $('body').on('click', '.star-list .star', function () {
+        $('.sub-star-form').removeClass('hidden');
+        $('.star-list .star').removeClass("active");
+        var max = $(this).data('num');
+        $(".star-list .star").each(function(indx, element){
+           var  num_el = indx+1;
+            if(num_el<=max)
+                $(element).addClass('active');
+        });
+        if(max>=8){
+            $('.sub-star-form .vopros.editing').html($('.sub-star-form .vopros.editing').data('good'));
+        }else {
+            $('.sub-star-form .vopros.editing').html($('.sub-star-form .vopros.editing').data('bad'));
+        }
+    });
+
+
     openCloseSideMenu();
     showBlocksOnScroll();
     $('body').on('click', '.blog-head_search > .icon-search', function () {

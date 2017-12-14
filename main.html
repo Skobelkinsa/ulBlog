@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1,user-scalable=no" name="viewport">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/blog.js"></script>
+</head>
+<body>
+<div class="fixed-block">
+    <header id="page-header" class="main-header">
+        <div class="container">
+            <div class="main-logo company-logo">
+                <a href="/">
+                    <svg width="159" height="30" viewBox="0 0 150.57 27.12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!--<defs><path id="a" d="M16.937.928H0v16.88h16.937V.928z"/></defs><g fill="none" fill-rule="evenodd"><path id="logo-text" d="M120.86 37.457L125 29.11a10.14 10.14 0 0 0-1.423-.11c-.48 0-.95.038-1.406.11L119.584 35l-2.626-5.89a9.245 9.245 0 0 0-1.405-.11c-.518 0-1.035.038-1.553.11l4.141 8.347V42h2.719v-4.543zM35 29.088c.258-.035.51-.059.754-.07a16.036 16.036 0 0 1 1.467 0c.245.011.495.035.753.07v6.59c0 .718.031 1.332.092 1.845.06.512.184.935.366 1.27.184.337.442.584.775.743.332.16.764.239 1.293.239.53 0 .958-.08 1.283-.239.327-.159.581-.406.765-.742.184-.336.305-.759.366-1.271.06-.513.093-1.127.093-1.846v-6.589c.27-.035.528-.059.773-.07a16.028 16.028 0 0 1 1.456 0c.251.011.506.035.764.07v7.136c0 .86-.081 1.647-.243 2.358-.164.713-.456 1.323-.877 1.829-.422.506-.985.898-1.69 1.174-.707.277-1.603.415-2.69.415-1.086 0-1.982-.138-2.69-.415-.705-.276-1.27-.668-1.689-1.174-.421-.506-.714-1.116-.877-1.829A10.582 10.582 0 0 1 35 36.224v-7.136zM50.113 35.963a8.24 8.24 0 0 1-1.144-.499 3.353 3.353 0 0 1-.863-.647 2.647 2.647 0 0 1-.553-.9c-.13-.351-.196-.77-.196-1.26 0-.595.108-1.12.327-1.575.219-.456.528-.837.929-1.147.399-.309.88-.542 1.444-.698A6.968 6.968 0 0 1 51.95 29c.638 0 1.235.052 1.79.157a14.48 14.48 0 0 1 1.755.455 5.968 5.968 0 0 1-.601 1.995 58.79 58.79 0 0 0-.571-.21 4.868 4.868 0 0 0-.62-.176 7.293 7.293 0 0 0-.74-.113 9.025 9.025 0 0 0-.938-.043c-.213 0-.428.017-.647.052-.218.035-.415.099-.59.192a1.146 1.146 0 0 0-.432.411c-.112.182-.17.418-.17.709 0 .233.045.428.132.586.088.158.207.292.357.403.15.11.319.204.506.28.188.075.375.149.563.219l1.125.402c.475.175.906.356 1.294.542.386.187.715.418.984.69.269.275.478.608.628.999.15.39.225.872.225 1.444a3.77 3.77 0 0 1-.346 1.627c-.232.49-.566.91-1.004 1.26-.438.349-.979.623-1.621.822-.644.198-1.386.297-2.222.297-.413 0-.782-.012-1.106-.036a8.633 8.633 0 0 1-1.8-.314c-.288-.082-.589-.18-.901-.297.037-.339.105-.692.207-1.06.099-.366.217-.737.355-1.11.526.198 1.02.347 1.482.446.462.1.955.149 1.481.149.788 0 1.406-.137 1.856-.412.45-.273.675-.69.675-1.25 0-.28-.053-.513-.159-.7a1.56 1.56 0 0 0-.412-.473 2.593 2.593 0 0 0-.572-.323c-.214-.088-.43-.172-.657-.254l-1.143-.403zM73.935 39.865c.188.024.408.041.659.053.248.012.475.017.678.017.282 0 .58-.024.89-.07.31-.046.6-.137.87-.271s.494-.32.669-.56c.175-.24.263-.551.263-.936 0-.361-.068-.662-.202-.901a1.547 1.547 0 0 0-.578-.577 2.631 2.631 0 0 0-.89-.307 6.886 6.886 0 0 0-1.145-.087h-1.214v3.639zm.892-5.564c.336 0 .65-.026.94-.079a2.16 2.16 0 0 0 .759-.28c.217-.134.385-.315.506-.542.122-.227.183-.516.183-.867 0-.338-.071-.614-.213-.83a1.512 1.512 0 0 0-.547-.508 2.19 2.19 0 0 0-.748-.245 5.596 5.596 0 0 0-.82-.061c-.379 0-.696.017-.952.053v3.36h.892zM71 29.191c.432-.057.93-.104 1.498-.14A35.077 35.077 0 0 1 74.624 29c.742 0 1.443.052 2.104.157.662.105 1.24.283 1.732.534.492.25.881.585 1.163 1.006.283.42.426.944.426 1.574a2.778 2.778 0 0 1-.708 1.881c-.217.24-.46.438-.73.595-.27.158-.546.254-.83.289.311.035.654.116 1.033.245.377.128.73.317 1.052.569.325.25.595.574.81.97.216.397.324.875.324 1.435 0 .759-.165 1.38-.495 1.864a3.468 3.468 0 0 1-1.337 1.147c-.56.28-1.208.472-1.943.576-.736.105-1.508.158-2.319.158-.62 0-1.234-.015-1.841-.044A35.782 35.782 0 0 1 71 41.789V29.191zM88 29.107A9.949 9.949 0 0 1 89.427 29c.469 0 .958.035 1.468.107V39.74H95.9c.04.204.066.397.08.583a6.962 6.962 0 0 1 0 1.094c-.014.186-.04.38-.08.583H88V29.107zM127 29.107c.495-.072.97-.107 1.427-.107.469 0 .958.035 1.467.107V39.74h5.006c.04.204.066.397.08.583a7.55 7.55 0 0 1 0 1.094c-.014.186-.04.38-.08.583H127V29.107zM151.936 39.865c.188.024.407.041.657.053.25.012.476.017.678.017.283 0 .58-.024.89-.07.31-.046.602-.137.872-.271.269-.134.492-.32.667-.56.176-.24.264-.551.264-.936 0-.361-.067-.662-.202-.901a1.547 1.547 0 0 0-.577-.577 2.63 2.63 0 0 0-.89-.307 6.885 6.885 0 0 0-1.145-.087h-1.214v3.639zm.889-5.564c.338 0 .652-.026.943-.079.29-.052.542-.145.759-.28.215-.134.384-.315.506-.542.12-.227.182-.516.182-.867 0-.338-.07-.614-.213-.83a1.53 1.53 0 0 0-.547-.508 2.206 2.206 0 0 0-.748-.245 5.595 5.595 0 0 0-.82-.061c-.378 0-.695.017-.951.053v3.36h.889zM149 29.191c.433-.057.932-.104 1.5-.14a35.015 35.015 0 0 1 2.123-.051c.743 0 1.444.052 2.106.157.66.105 1.238.283 1.73.534.493.25.881.585 1.164 1.006.284.42.426.944.426 1.574a2.78 2.78 0 0 1-.709 1.881c-.215.24-.458.438-.728.595a2.161 2.161 0 0 1-.83.289c.31.035.654.116 1.032.245.377.128.73.317 1.052.569.325.25.595.574.81.97.216.397.324.875.324 1.435 0 .759-.165 1.38-.496 1.864-.33.484-.776.866-1.336 1.147-.56.28-1.208.472-1.944.576-.735.105-1.508.158-2.317.158-.621 0-1.235-.015-1.841-.044a35.883 35.883 0 0 1-2.066-.167V29.191zM62.931 31.833l1.62 5.415h-3.317l1.697-5.415zm-2.36 7.584h4.644l.78 2.583H69l-4.39-12.893c-.3-.035-.572-.063-.82-.08a10.905 10.905 0 0 0-1.581 0c-.246.017-.506.045-.78.08L57 42h2.77l.801-2.583zM85 29.107a10.513 10.513 0 0 0-3 0V42h3V29.107zM101 29.107a10.525 10.525 0 0 0-3 0V42h3V29.107zM111.884 31.07a4.705 4.705 0 0 0 0-2.07h-9.768a4.645 4.645 0 0 0 0 2.07h3.461V41h2.843v-9.93h3.464zM141.931 31.833l1.62 5.415h-3.317l1.697-5.415zm-2.36 7.584h4.644l.78 2.583H148l-4.39-12.893c-.3-.035-.574-.063-.82-.08a10.885 10.885 0 0 0-1.581 0c-.247.017-.508.045-.78.08L136 42h2.77l.801-2.583z" fill="#0090CB"/><g transform="translate(0 17)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path id="logo-arrow" fill="#16A64A" mask="url(#b)" d="M11.693.927L8.387 5.984 7.198 4.8l-2.07-2.063-3.309 3.297 2.076 2.069 1.19 1.186L0 12.597l16.937 5.211z"/></g><path id="logo-cogwheel" d="M28.87 35.821c.083-.595.13-1.202.13-1.821s-.047-1.226-.13-1.821h-1.537a11.31 11.31 0 0 0-.607-2.27l1.328-.776c-.46-1.14-1.077-2.199-1.825-3.151l-1.32.77a11.57 11.57 0 0 0-1.662-1.661l.76-1.328a12.99 12.99 0 0 0-3.154-1.823l-.762 1.333a11.474 11.474 0 0 0-2.27-.607V21.13A13.009 13.009 0 0 0 16 21c-.513 0-1.018.033-1.514.09l.484 1.64.865 2.796c.055-.003.11-.008.165-.008 4.677 0 8.481 3.805 8.481 8.482S20.677 42.482 16 42.482 7.518 38.677 7.518 34c0-.073.008-.144.011-.216L3.1 32.416A12.94 12.94 0 0 0 3 34c0 .619.046 1.226.13 1.821h1.536c.126.786.33 1.544.607 2.27l-1.33.77c.46 1.141 1.077 2.2 1.825 3.153l1.323-.767a11.57 11.57 0 0 0 1.662 1.662l-.76 1.328a12.99 12.99 0 0 0 3.154 1.823l.762-1.334a11.31 11.31 0 0 0 2.27.607v1.537c.595.084 1.202.13 1.821.13.618 0 1.226-.046 1.821-.13v-1.537a11.33 11.33 0 0 0 2.27-.607l.793 1.322a13.01 13.01 0 0 0 3.13-1.816l-.767-1.323a11.68 11.68 0 0 0 1.662-1.662l1.327.76a12.945 12.945 0 0 0 1.832-3.176l-1.342-.74a11.33 11.33 0 0 0 .607-2.27h1.537z" fill="#0090CB"/></g>
+                        -->
+                        <defs><style>.cls-1{fill:#0090cb;}.cls-2{fill:#14a74a;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="eng"><g id="Слой_2" data-name="Слой 2"><path class="cls-1" d="M114.76,17.81l4-7.55a10.66,10.66,0,0,0-1.39-.1,9.48,9.48,0,0,0-1.37.1l-2.53,5.33-2.56-5.33a9.73,9.73,0,0,0-1.37-.1,11.86,11.86,0,0,0-1.52.1l4,7.55v4.11h2.66Z"></path><path class="cls-1" d="M32.77,10.27q.35,0,.68-.06l.68,0,.65,0c.22,0,.45,0,.68.06v6A14.77,14.77,0,0,0,35.55,18a3.26,3.26,0,0,0,.33,1.17,1.55,1.55,0,0,0,.7.68,2.72,2.72,0,0,0,1.18.22,2.65,2.65,0,0,0,1.17-.22,1.56,1.56,0,0,0,.69-.68A3.24,3.24,0,0,0,40,18,14.74,14.74,0,0,0,40,16.31v-6l.7-.06.65,0,.68,0c.23,0,.46,0,.69.06v6.55A9.81,9.81,0,0,1,42.54,19a4,4,0,0,1-.8,1.68,3.71,3.71,0,0,1-1.54,1.08,6.71,6.71,0,0,1-2.44.38,6.72,6.72,0,0,1-2.44-.38,3.7,3.7,0,0,1-1.54-1.08A4,4,0,0,1,33,19a9.81,9.81,0,0,1-.22-2.16Z"></path><path class="cls-1" d="M47.46,16.52a8.49,8.49,0,0,1-1.13-.46,3.31,3.31,0,0,1-.85-.6,2.42,2.42,0,0,1-.55-.83,3.14,3.14,0,0,1-.19-1.17A3.15,3.15,0,0,1,45.06,12,3,3,0,0,1,46,10.94a4.23,4.23,0,0,1,1.43-.65,7.35,7.35,0,0,1,1.87-.22,10.13,10.13,0,0,1,1.77.15,15,15,0,0,1,1.73.42,5.26,5.26,0,0,1-.59,1.85l-.56-.19a5,5,0,0,0-.61-.16q-.32-.06-.73-.11t-.93,0a4.33,4.33,0,0,0-.64,0,2,2,0,0,0-.58.18,1.1,1.1,0,0,0-.43.38,1.17,1.17,0,0,0-.17.66,1.05,1.05,0,0,0,.13.54,1.19,1.19,0,0,0,.35.37,2.32,2.32,0,0,0,.5.26l.56.2,1.11.37q.7.24,1.28.5a3.46,3.46,0,0,1,1,.64,2.65,2.65,0,0,1,.62.92,3.54,3.54,0,0,1,.22,1.34,3.23,3.23,0,0,1-1.33,2.67,4.92,4.92,0,0,1-1.6.76,7.94,7.94,0,0,1-2.19.28c-.41,0-.77,0-1.09,0s-.63-.06-.92-.11-.58-.11-.86-.19-.58-.17-.89-.28a6,6,0,0,1,.2-1q.15-.51.35-1a10.71,10.71,0,0,0,1.46.41,7.38,7.38,0,0,0,1.46.14,3.7,3.7,0,0,0,1.83-.38,1.36,1.36,0,0,0,.51-1.81,1.47,1.47,0,0,0-.41-.44,2.57,2.57,0,0,0-.56-.3l-.65-.24Z"></path><path class="cls-1" d="M67,10.25q.59-.08,1.37-.13t1.94,0a12.12,12.12,0,0,1,1.92.15,5.25,5.25,0,0,1,1.58.49,2.77,2.77,0,0,1,1.06.93,2.57,2.57,0,0,1,.39,1.46,2.6,2.6,0,0,1-.65,1.74,2.81,2.81,0,0,1-.67.55,2,2,0,0,1-.76.27,4.53,4.53,0,0,1,.94.23,3.28,3.28,0,0,1,1,.53,2.82,2.82,0,0,1,.74.9,2.78,2.78,0,0,1,.3,1.33,3,3,0,0,1-.45,1.73,3.18,3.18,0,0,1-1.22,1.06,5.72,5.72,0,0,1-1.78.53,14.82,14.82,0,0,1-2.12.15q-.85,0-1.68,0T67,21.91ZM70.52,15a4.75,4.75,0,0,0,.86-.07,2,2,0,0,0,.69-.26,1.29,1.29,0,0,0,.46-.5,1.7,1.7,0,0,0,.17-.8A1.32,1.32,0,0,0,72,12.1a2,2,0,0,0-.68-.23,5.08,5.08,0,0,0-.75-.06,6.48,6.48,0,0,0-.87,0V15Zm-.81,5.15.6,0,.62,0a5.42,5.42,0,0,0,.81-.07,2.64,2.64,0,0,0,.8-.25,1.67,1.67,0,0,0,.61-.52,1.45,1.45,0,0,0,.24-.87,1.7,1.7,0,0,0-.19-.83,1.42,1.42,0,0,0-.53-.53,2.38,2.38,0,0,0-.81-.28,6.21,6.21,0,0,0-1-.08H69.71Z"></path><path class="cls-1" d="M83.5,10.27a9.39,9.39,0,0,1,1.31-.1,9.9,9.9,0,0,1,1.35.1v9.61h4.61a4.29,4.29,0,0,1,.07.53q0,.25,0,.48c0,.17,0,.34,0,.51a4.27,4.27,0,0,1-.07.53H83.5Z"></path><path class="cls-1" d="M120.4,10.27a9.37,9.37,0,0,1,1.31-.1,9.89,9.89,0,0,1,1.35.1v9.61h4.61a4.3,4.3,0,0,1,.07.53c0,.17,0,.33,0,.48s0,.34,0,.51a4.28,4.28,0,0,1-.07.53H120.4Z"></path><path class="cls-1" d="M141.43,10.25q.59-.08,1.37-.13t1.94,0a12.13,12.13,0,0,1,1.93.15,5.27,5.27,0,0,1,1.58.49,2.78,2.78,0,0,1,1.06.93,2.84,2.84,0,0,1,.21,2.42,2.57,2.57,0,0,1-.47.78,2.78,2.78,0,0,1-.67.55,2,2,0,0,1-.76.27,4.53,4.53,0,0,1,.94.23,3.28,3.28,0,0,1,1,.53,2.8,2.8,0,0,1,.74.9,2.77,2.77,0,0,1,.3,1.33,3,3,0,0,1-.45,1.73,3.17,3.17,0,0,1-1.22,1.06,5.72,5.72,0,0,1-1.78.53,14.8,14.8,0,0,1-2.12.15q-.85,0-1.68,0t-1.89-.15Zm3.5,4.73a4.77,4.77,0,0,0,.86-.07,2,2,0,0,0,.69-.26,1.3,1.3,0,0,0,.46-.5,1.72,1.72,0,0,0,.17-.8,1.39,1.39,0,0,0-.19-.77,1.41,1.41,0,0,0-.5-.47,2,2,0,0,0-.68-.23,5.08,5.08,0,0,0-.75-.06,6.48,6.48,0,0,0-.87,0V15Zm-.81,5.15.6,0,.62,0a5.41,5.41,0,0,0,.81-.07,2.63,2.63,0,0,0,.8-.25,1.67,1.67,0,0,0,.61-.52,1.44,1.44,0,0,0,.24-.87,1.7,1.7,0,0,0-.19-.83,1.42,1.42,0,0,0-.53-.53,2.38,2.38,0,0,0-.81-.28,6.21,6.21,0,0,0-1-.08h-1.11Z"></path><path class="cls-1" d="M57.49,19.58H61.9l.74,2.33h2.85L61.32,10.27l-.78-.07-.72,0-.78,0-.74.07L54.1,21.91h2.63Zm2.24-6.85,1.54,4.89H58.12Z"></path><path class="cls-1" d="M80.91,10.27a10,10,0,0,0-1.37-.1,9.63,9.63,0,0,0-1.35.1V21.91h2.72Z"></path><path class="cls-1" d="M95.35,10.27a10,10,0,0,0-1.37-.1,9.64,9.64,0,0,0-1.35.1V21.91h2.72Z"></path><path class="cls-1" d="M106.57,12.27a4.61,4.61,0,0,0,.11-1,4.47,4.47,0,0,0-.11-1H97.22a4.47,4.47,0,0,0-.11,1,4.61,4.61,0,0,0,.11,1h3.31v9.64h2.72V12.27Z"></path><path class="cls-1" d="M132.12,19.58h4.41l.74,2.33h2.85L136,10.27l-.78-.07-.72,0-.78,0-.74.07-4.2,11.65h2.63Zm2.24-6.85,1.54,4.89h-3.15Z"></path><polygon class="cls-2 picture-hidden" points="11.01 0 7.89 4.78 6.77 3.66 4.83 1.71 1.71 4.82 3.67 6.78 4.79 7.9 0 11.02 15.94 15.94 11.01 0"></polygon><path class="cls-1 picture-hidden" d="M27,16.63a12.07,12.07,0,0,0,0-3.42H25.51a10.68,10.68,0,0,0-.57-2.13l1.25-.73a12.19,12.19,0,0,0-1.71-3l-1.24.72a10.88,10.88,0,0,0-1.56-1.56l.71-1.25a12.19,12.19,0,0,0-3-1.71l-.72,1.25a10.69,10.69,0,0,0-2.13-.57V2.83a12,12,0,0,0-3.13,0l.46,1.54L14.72,7h.15a8,8,0,1,1-8,8c0-.07,0-.14,0-.2L2.76,13.43a12.08,12.08,0,0,0-.09,1.49,12.3,12.3,0,0,0,.12,1.71H4.23a10.69,10.69,0,0,0,.57,2.13l-1.25.72a12.19,12.19,0,0,0,1.71,3l1.24-.72a10.88,10.88,0,0,0,1.56,1.56l-.71,1.25a12.19,12.19,0,0,0,3,1.71L11,25a10.68,10.68,0,0,0,2.13.57V27a12.07,12.07,0,0,0,3.42,0V25.56A10.69,10.69,0,0,0,18.71,25l.75,1.24a12.19,12.19,0,0,0,2.94-1.71l-.72-1.24a10.88,10.88,0,0,0,1.56-1.56l1.25.71a12.19,12.19,0,0,0,1.72-3l-1.26-.7a10.69,10.69,0,0,0,.57-2.13Z"></path></g></g></g>
+                    </svg>
+                </a>
+            </div>
+            <nav class="desktop-menu">
+                <ul class="menu"><li class="menu__item first menu__item_active"><a href="https://usabilitylab.ru/usability/" class="menu__link">Юзабилити</a></li><li class="menu__item"><a href="https://usabilitylab.ru/services/" class="menu__link">Услуги</a></li><li class="menu__item"><a href="https://usabilitylab.ru/clients/" class="menu__link">Клиенты</a></li><li class="menu__item"><a href="https://usabilitylab.ru/about/" class="menu__link">О нас</a></li><li class="menu__item last"><a href="https://usabilitylab.ru/contacts/" class="menu__link">Контакты</a></li></ul>
+            </nav>
+            <div class="main-phone main-phone_black">+7 (495) 933-01-37</div>
+            <div id="open-side-menu" class="side-menu-btn side-menu-btn_act-open">
+                <div class="side-menu-btn__lines side-menu-btn__lines_blue"></div>
+            </div>
+        </div>
+    </header>
+</div>
+<div id="side-menu" class="side-menu">
+
+    <div class="side-menu__head">
+        <div id="close-side-menu" class="side-menu-btn side-menu-btn_act-close is-state-close">
+            <div class="side-menu-btn__lines"></div>
+        </div>
+    </div>
+
+    <nav class="side-menu-nav">
+        <ul class="side-menu-nav__list"><li class="side-menu-nav__item first"><a href="/usability/">Юзабилити</a></li><li class="side-menu-nav__item is-current"><a href="/services/">Услуги</a></li><li class="side-menu-nav__item"><a href="/clients/">Клиенты</a></li><li class="side-menu-nav__item"><a href="/about/">О нас</a></li><li class="side-menu-nav__item last"><a href="/contacts/">Контакты</a></li></ul>
+    </nav>
+
+    <div class="side-menu__footer">
+        <a class="btn btn_sec side-menu__footer-link js-mfp" href="/prj-form/" data-mfp-type="ajax">Спланировать проект</a>
+
+        <a href="tel:+7 (495) 933-01-37" class="btn btn_white side-menu__footer-link">+7 (495) 933-01-37</a>
+
+        <a class="btn btn_white side-menu__footer-link" href="mailto:info@usabilitylab.net">info@usabilitylab.net</a>
+
+        <div class="side-menu__footer-copyr">© 2002-2017 OOO "ЮЗАБИЛИТИЛАБ"</div>
+    </div>
+</div>
+<section class="block-gray">
+    <div class="container container_content-wrap blog">
+        <h1 class="blog-title">Блог</h1>
+        <div class="blog-desc">
+            <p>Раз в неделю мы рассказываем, как тяжело нам живётся и всякое такое Подпишитесь на нас и получайте еженедельную подборку мясных кейсов на почту бла-бла</p>
+        </div>
+        <ul class="blog-tags">
+            <li><a href="#">Банки</a><span class="blog-tags_cnt">1</span></li>
+            <li><a href="#">ФМС</a><span class="blog-tags_cnt">12</span></li>
+            <li><a href="#">Тестирование</a><span class="blog-tags_cnt">12</span></li>
+            <li><a href="#">Профессиональные интерфейсы</a><span class="blog-tags_cnt">13</span></li>
+            <li><a href="#">Бизнес–завтрак</a><span class="blog-tags_cnt">6</span></li>
+            <li><a href="#">Экспертная оценка</a><span class="blog-tags_cnt">4</span></li>
+            <li><a href="#">Интернет–магазин</a><span class="blog-tags_cnt">3</span></li>
+            <li><a href="#">Профессиональные интерфейсы</a><span class="blog-tags_cnt">8</span></li>
+            <li><a href="#">Конференции</a><span class="blog-tags_cnt">9</span></li>
+            <li><a href="#">Рейтинг банков</a><span class="blog-tags_cnt">5</span></li>
+            <li><a href="#">Инструкции</a><span class="blog-tags_cnt">4</span></li>
+            <li><a href="#">Профессиональные интерфейсы</a><span class="blog-tags_cnt">3</span></li>
+        </ul>
+    </div>
+</section>
+<section class="blog_menu-container">
+    <div class="container blog-head">
+        <div class="blog-head_search">
+            <div class="icon-search"></div>
+            <form class="blog-head_search-toggle hidden">
+                <input type="text" placeholder="Поиск...">
+                <button type="submit" class="icon-search"></button>
+            </form>
+        </div>
+        <div class="blog-head_menu">
+            <a href="#">КЕЙСЫ</a>
+            <a href="#">МЕРОПРИЯТИЯ</a>
+            <a href="#">ИССЛЕДОВАНИЯ</a>
+            <a href="#">РЕЙТИНГ БАНКОВ</a>
+            <a href="#">АВТОРЫ</a>
+            <a href="#">#РИФ</a>
+        </div>
+    </div>
+</section>
+<main>
+    <div class="container-full blog-list">
+        <a href="#" class="blog-list_item-big">
+            <span class="blog-list_item-big-image"><img src="http://www.bastet-catering.waw.pl/pliki/photodune-192859-business-lunch-group-of-businesspeople-eating-lunch-m.jpg" alt=""></span>
+            <span class="blog-list_item-big-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+        </a>
+        <a href="#" class="blog-list_item">
+            <span class="blog-list_item-image"><img src="http://www.khaledhgazy.com/wp-content/uploads/cache/images/first/first-1143610614.jpg" alt=""></span>
+            <span class="blog-list_item-desc">
+                <span class="blog-list_item-tag">Проектирование</span>
+                <span class="blog-list_item-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                <span class="blog-list_item-date">20 ноября 2017</span>
+            </span>
+        </a>
+        <a href="#" class="blog-list_item">
+            <span class="blog-list_item-image"><img src="http://www.khaledhgazy.com/wp-content/uploads/cache/images/first/first-1143610614.jpg" alt=""></span>
+            <span class="blog-list_item-desc">
+                <span class="blog-list_item-tag">Проектирование</span>
+                <span class="blog-list_item-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                <span class="blog-list_item-date">20 ноября 2017</span>
+            </span>
+        </a>
+        <a href="#" class="blog-list_item">
+            <span class="blog-list_item-image"><img src="http://www.khaledhgazy.com/wp-content/uploads/cache/images/first/first-1143610614.jpg" alt=""></span>
+            <span class="blog-list_item-desc">
+                <span class="blog-list_item-tag">Проектирование</span>
+                <span class="blog-list_item-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                <span class="blog-list_item-date">20 ноября 2017</span>
+            </span>
+        </a>
+        <a href="#" class="blog-list_item">
+            <span class="blog-list_item-image"><img src="http://www.khaledhgazy.com/wp-content/uploads/cache/images/first/first-1143610614.jpg" alt=""></span>
+            <span class="blog-list_item-desc">
+                <span class="blog-list_item-tag">Проектирование</span>
+                <span class="blog-list_item-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                <span class="blog-list_item-date">20 ноября 2017</span>
+            </span>
+        </a>
+        <a href="#" class="blog-list_item">
+            <span class="blog-list_item-image"><img src="http://www.khaledhgazy.com/wp-content/uploads/cache/images/first/first-1143610614.jpg" alt=""></span>
+            <span class="blog-list_item-desc">
+                <span class="blog-list_item-tag">Проектирование</span>
+                <span class="blog-list_item-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                <span class="blog-list_item-date">20 ноября 2017</span>
+            </span>
+        </a>
+        <a href="#" class="blog-list_item">
+            <span class="blog-list_item-image"><img src="http://www.khaledhgazy.com/wp-content/uploads/cache/images/first/first-1143610614.jpg" alt=""></span>
+            <span class="blog-list_item-desc">
+                <span class="blog-list_item-tag">Проектирование</span>
+                <span class="blog-list_item-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                <span class="blog-list_item-date">20 ноября 2017</span>
+            </span>
+        </a>
+        <a href="#" class="blog-list_item">
+            <span class="blog-list_item-image"><img src="http://www.khaledhgazy.com/wp-content/uploads/cache/images/first/first-1143610614.jpg" alt=""></span>
+            <span class="blog-list_item-desc">
+                <span class="blog-list_item-tag">Проектирование</span>
+                <span class="blog-list_item-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                <span class="blog-list_item-date">20 ноября 2017</span>
+            </span>
+        </a>
+        <a href="#" class="blog-list_item">
+            <span class="blog-list_item-image"><img src="http://www.khaledhgazy.com/wp-content/uploads/cache/images/first/first-1143610614.jpg" alt=""></span>
+            <span class="blog-list_item-desc">
+                <span class="blog-list_item-tag">Проектирование</span>
+                <span class="blog-list_item-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                <span class="blog-list_item-date">20 ноября 2017</span>
+            </span>
+        </a>
+        <a href="#" class="blog-list_item-noimage">
+            <span class="blog-list_item-noimage-desc">
+                <span class="blog-list_item-noimage-tag">Проектирование</span>
+                <span class="blog-list_item-noimage-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                <span class="blog-list_item-noimage-date">20 ноября 2017</span>
+                <span class="blog-list_item-noimage-text">Методология человеко-ориентированного проектирования позволяет снизить риск провала, поскольку первые этапы проекта всегда посвящены сбору информации о требованиях продукта, как со стороны бизнеса</span>
+            </span>
+        </a>
+        <div style="clear:both"></div>
+    </div>
+    <div class="container-full blog-subscribe">
+        <form class="blog-subscribe_container" action="">
+            <p class="blog-subscribe_container-desc">Хотите получать подборки наших статей на почту раз в неделю?</p>
+            <input type="text">
+            <button type="submit">Подписаться</button>
+            <div class="blog-subscribe_container-social">
+                <p>Следите за нами <br>в социальных сетях</p>
+                    <a href="https://www.facebook.com/usabilitylab/" rel="nofollow" target="_blank" class="social-icon__item social-icon__item_blue social-icon__item_facebook" onclick="gtag('event', 'click', {'event_category': 'social','event_label': 'facebook-footer'});">
+                        <div class="picture-hidden">
+                            <svg width="8px" height="16px" viewBox="11 8 8 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs></defs>
+                                <path d="M13.3455921,23.4296151 C13.349688,23.3770509 13.3571972,23.3241454 13.3571972,23.2715812 C13.3575385,21.0376027 13.3575385,18.8036241 13.3575385,16.5693043 L13.3575385,16.4041025 L11,16.4041025 L11,13.6502846 L11.1675911,13.6502846 C11.8444405,13.6502846 12.5216312,13.6468713 13.1984806,13.6530152 C13.3288671,13.6543805 13.3602691,13.6127387 13.3602691,13.4878134 C13.3602691,12.733483 13.3428615,11.9781286 13.380066,11.2255048 C13.4295583,10.2305396 13.7845373,9.36220631 14.5846054,8.7208548 C15.0645097,8.33618043 15.6236017,8.12763026 16.227066,8.05287987 C17.1203161,7.94263158 18.0128835,8.02591512 18.9030617,8.11090528 C18.9382182,8.11431854 18.9941957,8.18053578 18.994537,8.21774031 C18.9999982,8.96251359 18.9969263,9.70694555 18.9999982,10.4517188 C19.0003396,10.5547993 18.9511886,10.5694763 18.8655158,10.569135 C18.4545593,10.5664044 18.0432615,10.5606018 17.6326464,10.5708416 C17.4162457,10.5766441 17.1974558,10.5957584 16.986175,10.6394481 C16.5311874,10.7339954 16.2728037,11.0230985 16.2229701,11.4866192 C16.1973706,11.72623 16.19464,11.9689128 16.1919094,12.2102303 C16.1874722,12.6263066 16.1908854,13.0420417 16.1908854,13.4577767 C16.1908854,13.6492606 16.1908854,13.6492606 16.3891958,13.6492606 C17.1629818,13.6496019 17.9367678,13.6496019 18.7102125,13.6496019 L18.8999897,13.6496019 C18.8822408,13.8045639 18.8692704,13.9373397 18.8522041,14.0697742 C18.7590221,14.7930439 18.6617442,15.5159723 18.5747061,16.2402661 C18.5596877,16.3624608 18.5218005,16.4030786 18.3968752,16.4020546 C17.7248044,16.3965934 17.0527335,16.399324 16.3806627,16.399324 L16.1895201,16.399324 L16.1895201,23.4296151 L13.3455921,23.4296151 Z" id="Page-1" stroke="none" fill="#00A2D8" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/user/usabilitylab" rel="nofollow" target="_blank" class="social-icon__item social-icon__item_blue social-icon__item_youtube" onclick="gtag('event', 'click', {'event_category': 'social','event_label': 'youtube-footer'});">
+                        <div class="picture-hidden">
+                            <svg width="9px" height="12px" viewBox="12 9 9 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs></defs>
+                                <polygon id="Path-13" stroke="none" fill="#00A2D8" fill-rule="evenodd" points="12 9 12 20.4909501 20.1230469 15.09375"></polygon>
+                            </svg>
+                        </div>
+                    </a>
+            </div>
+        </form>
+    </div>
+    <div class="container-full blog-list">
+        <a href="#" class="blog-list_item">
+            <span class="blog-list_item-image"><img src="http://www.khaledhgazy.com/wp-content/uploads/cache/images/first/first-1143610614.jpg" alt=""></span>
+            <span class="blog-list_item-desc">
+                <span class="blog-list_item-tag">Проектирование</span>
+                <span class="blog-list_item-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                <span class="blog-list_item-date">20 ноября 2017</span>
+            </span>
+        </a>
+        <a href="#" class="blog-list_item">
+            <span class="blog-list_item-image"><img src="http://www.khaledhgazy.com/wp-content/uploads/cache/images/first/first-1143610614.jpg" alt=""></span>
+            <span class="blog-list_item-desc">
+                <span class="blog-list_item-tag">Проектирование</span>
+                <span class="blog-list_item-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                <span class="blog-list_item-date">20 ноября 2017</span>
+            </span>
+        </a>
+        <a href="#" class="blog-list_item">
+            <span class="blog-list_item-image"><img src="http://www.khaledhgazy.com/wp-content/uploads/cache/images/first/first-1143610614.jpg" alt=""></span>
+            <span class="blog-list_item-desc">
+                <span class="blog-list_item-tag">Проектирование</span>
+                <span class="blog-list_item-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                <span class="blog-list_item-date">20 ноября 2017</span>
+            </span>
+        </a>
+        <a href="#" class="blog-list_item-noimage">
+            <span class="blog-list_item-noimage-desc">
+                <span class="blog-list_item-noimage-tag">Проектирование</span>
+                <span class="blog-list_item-noimage-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                <span class="blog-list_item-noimage-date">20 ноября 2017</span>
+                <span class="blog-list_item-noimage-text">Методология человеко-ориентированного проектирования позволяет снизить риск провала, поскольку первые этапы проекта всегда посвящены сбору информации о требованиях продукта, как со стороны бизнеса</span>
+            </span>
+        </a>
+        <div style="clear:both"></div>
+    </div>
+</main>
+<section class="hot-item">
+    <div class="container-full">
+        <div class="hot-item_sub-title">ПОДБОРКА ПО ГОСУСЛУГАМ</div>
+        <div class="hot-item_title">Проектирование сайта ФНС</div>
+        <div class="hot-item_list">
+            <a href="#" class="hot-item_list-item">
+                <span class="hot-item_list-container">
+                    <span class="hot-item_list-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                    <span class="hot-item_list-date">20 ноября 2017</span>
+                </span>
+            </a>
+            <a href="#" class="hot-item_list-item">
+                <span class="hot-item_list-container">
+                    <span class="hot-item_list-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                    <span class="hot-item_list-date">20 ноября 2017</span>
+                </span>
+            </a>
+            <a href="#" class="hot-item_list-item">
+                <span class="hot-item_list-container">
+                    <span class="hot-item_list-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                    <span class="hot-item_list-date">20 ноября 2017</span>
+                </span>
+            </a>
+            <a href="#" class="hot-item_list-item">
+                <span class="hot-item_list-container">
+                    <span class="hot-item_list-title">30 декабря 2017 года мы проведём новогодний бизнес–завтрак</span>
+                    <span class="hot-item_list-date">20 ноября 2017</span>
+                </span>
+            </a>
+
+            <div style="clear:both"></div>
+        </div>
+    </div>
+</section>
+<footer class="footer container">
+
+    <div class="footer-col footer-col_left">
+        <div class="copyright">
+            +7 (495) 933-01-37 <a href="mailto:info@usabilitylab.net" class="mail-link" onclick="gtag('event', 'click', {
+  'event_category': 'email',
+  'event_label': 'info-footer'});">info@usabilitylab.net</a><br>
+            ©&nbsp;2002-2017 ООО "ЮЗАБИЛИТИЛАБ"
+        </div>
+    </div>
+    <div class="footer-col footer-col_right">
+        <div class="social-icon">
+            <a href="https://www.facebook.com/usabilitylab/" rel="nofollow" target="_blank" class="social-icon__item social-icon__item_blue social-icon__item_facebook" onclick="gtag('event', 'click', {
+	'event_category': 'social',
+	'event_label': 'facebook-footer'});">
+                <div class="picture-hidden">
+                    <svg width="8px" height="16px" viewBox="11 8 8 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <path d="M13.3455921,23.4296151 C13.349688,23.3770509 13.3571972,23.3241454 13.3571972,23.2715812 C13.3575385,21.0376027 13.3575385,18.8036241 13.3575385,16.5693043 L13.3575385,16.4041025 L11,16.4041025 L11,13.6502846 L11.1675911,13.6502846 C11.8444405,13.6502846 12.5216312,13.6468713 13.1984806,13.6530152 C13.3288671,13.6543805 13.3602691,13.6127387 13.3602691,13.4878134 C13.3602691,12.733483 13.3428615,11.9781286 13.380066,11.2255048 C13.4295583,10.2305396 13.7845373,9.36220631 14.5846054,8.7208548 C15.0645097,8.33618043 15.6236017,8.12763026 16.227066,8.05287987 C17.1203161,7.94263158 18.0128835,8.02591512 18.9030617,8.11090528 C18.9382182,8.11431854 18.9941957,8.18053578 18.994537,8.21774031 C18.9999982,8.96251359 18.9969263,9.70694555 18.9999982,10.4517188 C19.0003396,10.5547993 18.9511886,10.5694763 18.8655158,10.569135 C18.4545593,10.5664044 18.0432615,10.5606018 17.6326464,10.5708416 C17.4162457,10.5766441 17.1974558,10.5957584 16.986175,10.6394481 C16.5311874,10.7339954 16.2728037,11.0230985 16.2229701,11.4866192 C16.1973706,11.72623 16.19464,11.9689128 16.1919094,12.2102303 C16.1874722,12.6263066 16.1908854,13.0420417 16.1908854,13.4577767 C16.1908854,13.6492606 16.1908854,13.6492606 16.3891958,13.6492606 C17.1629818,13.6496019 17.9367678,13.6496019 18.7102125,13.6496019 L18.8999897,13.6496019 C18.8822408,13.8045639 18.8692704,13.9373397 18.8522041,14.0697742 C18.7590221,14.7930439 18.6617442,15.5159723 18.5747061,16.2402661 C18.5596877,16.3624608 18.5218005,16.4030786 18.3968752,16.4020546 C17.7248044,16.3965934 17.0527335,16.399324 16.3806627,16.399324 L16.1895201,16.399324 L16.1895201,23.4296151 L13.3455921,23.4296151 Z" id="Page-1" stroke="none" fill="#00A2D8" fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/user/usabilitylab" rel="nofollow" target="_blank" class="social-icon__item social-icon__item_blue social-icon__item_youtube" onclick="gtag('event', 'click', {
+	'event_category': 'social',
+	'event_label': 'youtube-footer'});">
+                <div class="picture-hidden">
+                    <svg width="9px" height="12px" viewBox="12 9 9 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <polygon id="Path-13" stroke="none" fill="#00A2D8" fill-rule="evenodd" points="12 9 12 20.4909501 20.1230469 15.09375"></polygon>
+                    </svg>
+                </div>
+            </a>
+        </div>
+        <!--
+        <div class="sel-lang">
+            <a class="sel-lang__item sel-lang__item_blue" href="#">Рус</a>
+            <a class="sel-lang__item sel-lang__item_blue" href="#">Eng</a>
+        </div>
+        -->
+    </div>
+</footer>
+</body>
+</html>
